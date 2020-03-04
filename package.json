@@ -1,0 +1,36 @@
+{
+  "name": "panda-utils",
+  "version": "1.0.0",
+  "description": "Some of utility functions used in dialy.",
+  "main": "dist/panda-utils.js",
+  "scripts": {
+    "dev": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ewall1106/panda-utils.git"
+  },
+  "keywords": [
+    "panda-utils"
+  ],
+  "author": "Ewall&熊猫",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ewall1106/panda-utils/issues"
+  },
+  "homepage": "https://github.com/Ewall1106/panda-utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
