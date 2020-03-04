@@ -1,6 +1,6 @@
 {
   "name": "panda-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some of utility functions used in dialy.",
   "main": "dist/panda-utils.js",
   "scripts": {
