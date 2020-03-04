@@ -1,18 +1,16 @@
 var path = require("path");
 
-module.exports = {
-  mode: "production",
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
+module.exports = {
   entry: "./src/index.js",
 
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "../dist"),
     filename: "panda-utils.js",
     library: "pandaUtils",
     libraryTarget: "umd"
   },
-
-  devtool: "cheap-module-source-map",
 
   module: {
     rules: [
@@ -24,7 +22,7 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+  plugins: [new CleanWebpackPlugin()]
 };
-
-
