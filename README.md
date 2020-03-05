@@ -33,7 +33,7 @@ pandaUtils.getDaysInOneMonth(2020,2); // 29
 // 获取上月第一天的开始时刻
 getStartTimeInLastMonth()
 
-// eg（统一返回）:
+// eg（统一返回string格式的GMT中国标准时间）:
 pandaUtils.getStartTimeInLastMonth(); // Sat Feb 01 2020 00:00:00 GMT+0800 (中国标准时间)
 ```
 
@@ -71,14 +71,6 @@ getStartTimeInWeek()
 
 // eg:
 pandaUtils.getStartTimeInWeek(); // Mon Mar 02 2020 00:00:00 GMT+0800 (中国标准时间)
-```
-
-```javascript
-// 获取本月最后一天的结束时刻
-getEndTimeInMonth()
-
-// eg:
-pandaUtils.getEndTimeInMonth(); // Tue Mar 31 2020 23:59:59 GMT+0800 (中国标准时间)
 ```
 
 ```javascript
@@ -120,6 +112,17 @@ getEndTimeInToday()
 
 // eg:
 pandaUtils.getEndTimeInToday(); // Thu Mar 05 2020 23:59:59 GMT+0800 (中国标准时间)
+```
+
+- 时间处理
+```javascript
+// 将时间戳转化为自定义的时间格式
+formatTime(<number>, <format>)
+
+// eg:
+const num = new Date().getTime();
+pandaUtils.formatTime(num, "Y-M-D h:m:s"); // 2020-03-05 17:38:33
+pandaUtils.formatTime(num, "Y年M月D日h时m分s秒"); // 2020年03月05日17时38分33秒
 ```
 
 ### 完善中...
