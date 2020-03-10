@@ -16,8 +16,8 @@ pandaUtils.somefunc()
 
 ### 分为以下几个模块
 
-- [时间日期相关](时间日期相关)
-- [表单验证相关](表单验证相关)
+- [时间日期相关](#时间日期相关)
+- [表单验证相关](#表单验证相关)
 - [判断客户端环境](#判断客户端环境)
 
 ## 时间日期相关
@@ -137,7 +137,7 @@ pandaUtils.checkPhoneNum(12345678901); // false
 
 
 ## 判断客户端环境
-```
+```javascript
 // 判断是否为IOS
 checkInIOS()
 
@@ -145,7 +145,7 @@ checkInIOS()
 pandaUtils.checkInIOS(); 
 ```
 
-```
+```javascript
 // 判断是否为Andriod
 checkInAndriod()
 
@@ -153,7 +153,7 @@ checkInAndriod()
 pandaUtils.checkInAndriod(); 
 ```
 
-```
+```javascript
 // 判断是否为微信
 checkInWx()
 
@@ -162,6 +162,7 @@ pandaUtils.checkInWx();
 ```
 
 ### 完善中...
+
 
 ## License
 
