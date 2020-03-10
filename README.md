@@ -16,10 +16,11 @@ pandaUtils.somefunc()
 
 ### 分为以下几个模块
 
-- [时间日期相关]()
-- ...
+- [时间日期相关](时间日期相关)
+- [表单验证相关](表单验证相关)
+- [判断客户端环境](#判断客户端环境)
 
-### 时间日期相关
+## 时间日期相关
 - 月维度：
 ```javascript
 // 获取某年某月中有多少天
@@ -125,4 +126,43 @@ pandaUtils.formatTime(num, "Y-M-D h:m:s"); // 2020-03-05 17:38:33
 pandaUtils.formatTime(num, "Y年M月D日h时m分s秒"); // 2020年03月05日17时38分33秒
 ```
 
+## 表单验证相关
+```javascript
+// 手机号码格式验证
+checkPhoneNum(<手机号码(Number类型)>)
+
+// eg：
+pandaUtils.checkPhoneNum(12345678901); // false
+```
+
+
+## 判断客户端环境
+```
+// 判断是否为IOS
+checkInIOS()
+
+// eg:
+pandaUtils.checkInIOS(); 
+```
+
+```
+// 判断是否为Andriod
+checkInAndriod()
+
+// eg:
+pandaUtils.checkInAndriod(); 
+```
+
+```
+// 判断是否为微信
+checkInWx()
+
+// eg:
+pandaUtils.checkInWx();
+```
+
 ### 完善中...
+
+## License
+
+[MIT](https://github.com/Ewall1106/panda-utils/blob/master/LICENSE)
