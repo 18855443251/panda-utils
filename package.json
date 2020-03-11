@@ -1,6 +1,6 @@
 {
   "name": "panda-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Some of utility functions used in dialy.",
   "main": "dist/panda-utils.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "url": "git+https://github.com/Ewall1106/panda-utils.git"
   },
   "keywords": [
-    "panda-utils"
+    "panda-utils",
+    "webpack",
+    "utils"
   ],
   "author": "Ewall&熊猫",
   "license": "MIT",
