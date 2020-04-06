@@ -19,6 +19,7 @@ pandaUtils.somefunc()
 - [时间日期相关](#时间日期相关)
 - [表单验证相关](#表单验证相关)
 - [判断客户端环境](#判断客户端环境)
+- [价格数字处理](#价格数字处理)
 
 ## 时间日期相关
 - 月维度：
@@ -161,8 +162,32 @@ checkInWx()
 pandaUtils.checkInWx();
 ```
 
-### 完善中...
+## 价格数字处理
+```javascript
+// 分转换为元
+toDecimal(<分(Number类型)>)
 
+// eg：
+pandaUtils.toDecimal(1234); // 12.34
+```
+
+```javascript
+// 分转换为元，去掉小数点后面的数值
+toDecimal0(<Number>)
+
+// eg：
+pandaUtils.toDecimal0(1234); // 12
+```
+
+```javascript
+// 分转换为元，并保留小数点后两位(不够两位强制补0)
+toDecimal0(<Number>)
+
+// eg：
+pandaUtils.toDecimal2(10); // 0.10
+```
+
+- 添加完善中...
 
 ## License
 
